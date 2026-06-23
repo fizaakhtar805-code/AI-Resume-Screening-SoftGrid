@@ -18,3 +18,16 @@ This project aims to build an intelligent resume screening system that automatic
 - **Columns:** years_experience, skills_match_score, education_level, project_count, certifications, interview_score, shortlisted
 
 ## Project Structure
+AI-Resume-Screening-SoftGrid/
+
+│
+
+├── Dataset/
+
+│   └── ai_resume_screening.csv
+
+├── Project_Proposal_FizaAkhtar.docx
+
+├── Research_Summary_FizaAkhtar.docx
+
+└── README.md
