@@ -22,14 +22,6 @@ This project was developed as part of the **SoftGrid Solutions AI/ML Internship*
 
 ---
 
-## 👩‍💻 Developer
-
-| Field | Details |
-|-------|---------|
-| **Name** | Fiza Akhtar |
-| **Program** | BSAI — 3rd Semester |
-| **Internship** | AI/ML Intern @ SoftGrid Solutions |
-| **Duration** | 5-Day Project |
 
 ---
 
