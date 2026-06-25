@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screening System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Resume Screening System</h1>
+            <p>Enter candidate details to predict shortlisting</p>
+        </div>
+
+        <div class="info-note">
+            <strong>ℹ️ Note:</strong> This system uses structured candidate features
+            (experience, skills, education, etc.) instead of raw resume file uploads,
+            as the underlying ML model is trained on numerical data for accurate predictions.
+        </div>
+
+        <form action="/predict" method="POST" class="form">
+
+            <div class="form-group">
+                <label>Years of Experience</label>
+                <input type="number" step="0.1" name="years_experience"
+                       placeholder="e.g. 5" required>
+            </div>
+
+            <div class="form-group">
+                <label>Skills Match Score (0 - 100)</label>
+                <input type="number" step="0.1" name="skills_match_score"
+                       placeholder="e.g. 85.5" min="0" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label>Education Level</label>
+                <select name="education_level" required>
+                    <option value="">-- Select --</option>
+                    <option value="0">High School</option>
+                    <option value="1">Bachelor's</option>
+                    <option value="2">Master's</option>
+                    <option value="3">PhD</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Number of Projects</label>
+                <input type="number" name="project_count"
+                       placeholder="e.g. 4" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label>Resume Length (words)</label>
+                <input type="number" name="resume_length"
+                       placeholder="e.g. 600" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label>GitHub Activity Score</label>
+                <input type="number" name="github_activity"
+                       placeholder="e.g. 150" min="0" required>
+            </div>
+
+            <button type="submit" class="btn">🔍 Predict Shortlisting</button>
+        </form>
+
+        <div class="footer">
+            <p>SoftGrid Solutions | AI/ML Internship</p>
+        </div>
+    </div>
+</body>
+</html>

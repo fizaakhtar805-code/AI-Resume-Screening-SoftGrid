@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Screening Result</h1>
+        </div>
+
+        <!-- Prediction Result Box -->
+        {% if prediction == "Yes" %}
+            <div class="result-box shortlisted">
+                <div class="result-icon">✅</div>
+                <h2>Shortlisted</h2>
+                <p>This candidate is recommended for the next round!</p>
+            </div>
+        {% else %}
+            <div class="result-box not-shortlisted">
+                <div class="result-icon">❌</div>
+                <h2>Not Shortlisted</h2>
+                <p>This candidate does not meet the criteria.</p>
+            </div>
+        {% endif %}
+
+        <!-- Confidence Score -->
+        <div class="confidence">
+            <label>Confidence Score</label>
+            <div class="confidence-bar">
+                <div class="confidence-fill" data-width="{{ confidence }}">
+                    {{ confidence }}%
+                </div>
+            </div>
+        </div>
+
+        <!-- Candidate Summary -->
+        <div class="summary">
+            <h3>Candidate Summary</h3>
+            <table>
+                <tr>
+                    <td>Years of Experience</td>
+                    <td>{{ summary.experience }}</td>
+                </tr>
+                <tr>
+                    <td>Skills Match Score</td>
+                    <td>{{ summary.skills }}%</td>
+                </tr>
+                <tr>
+                    <td>Education Level</td>
+                    <td>{{ summary.education }}</td>
+                </tr>
+                <tr>
+                    <td>Number of Projects</td>
+                    <td>{{ summary.projects }}</td>
+                </tr>
+                <tr>
+                    <td>GitHub Activity</td>
+                    <td>{{ summary.github }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Back Button -->
+        <a href="/" class="btn back-btn">← Screen Another Candidate</a>
+
+        <div class="footer">
+            <p>SoftGrid Solutions | AI/ML Internship</p>
+        </div>
+    </div>
+
+    <script>
+        const fill = document.querySelector('.confidence-fill');
+        fill.style.width = fill.getAttribute('data-width') + '%';
+    </script>
+</body>
+</html>
