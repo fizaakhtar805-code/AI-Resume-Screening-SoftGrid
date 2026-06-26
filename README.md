@@ -29,16 +29,7 @@ This project was developed as part of the **SoftGrid Solutions AI/ML Internship*
 
 ---
 
-## 👩‍💻 Developer
 
-| Field | Details |
-|-------|---------|
-| **Name** | Fiza Akhtar |
-| **Program** | BSAI — 3rd Semester |
-| **Role** | AI/ML Intern @ SoftGrid Solutions |
-| **Duration** | 5-Day Project |
-
----
 
 > 💡 **Design Note:** Since the dataset consists of structured numerical features (experience, skills score, etc.) rather than raw resume text, the app uses a **feature-input form** instead of file upload. This is the correct design for this dataset, as the trained model expects numerical inputs.
 
@@ -186,7 +177,7 @@ Simply visit **[fizaakhtar805.pythonanywhere.com](https://fizaakhtar805.pythonan
 ### Option 2: Run Locally
 
 ```bash
-# Inside the Day4 folder, run:
+
 python app.py
 ```
 
@@ -201,21 +192,7 @@ http://127.0.0.1:5000
 3. View the prediction result, confidence score, and candidate summary
 4. Click **"Screen Another Candidate"** to test another candidate
 
-### Running the Notebooks
-- **Day 2:** Open `Day2/Task2_Preprocessing.ipynb` to see data cleaning and EDA
-- **Day 3:** Open `Day3/Task3_ModelDevelopment.ipynb` to see model training
-
 ---
-
-## 📸 Screenshots
-
-The application includes:
-- A clean **input form** with field validation
-- A **Shortlisted** result page (green) with confidence score
-- A **Not Shortlisted** result page (red) with confidence score
-- A responsive candidate summary table
-
-*(See the Working Demonstration video for a full walkthrough.)*
 
 ---
 
