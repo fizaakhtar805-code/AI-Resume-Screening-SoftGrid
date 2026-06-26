@@ -7,6 +7,15 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-red?style=for-the-badge&logo=jupyter)
 ![HTML5](https://img.shields.io/badge/HTML5-Markup-e34f26?style=for-the-badge&logo=html5)
 ![CSS3](https://img.shields.io/badge/CSS3-Style-1572b6?style=for-the-badge&logo=css3)
+![Live](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
+
+---
+
+## 🌐 Live Demo
+
+### 🔗 **[Try the Live App → fizaakhtar805.pythonanywhere.com](https://fizaakhtar805.pythonanywhere.com)**
+
+The application is deployed and live! Click the link above to test it yourself — enter candidate details and get an instant shortlisting prediction with a confidence score.
 
 ---
 
@@ -14,9 +23,9 @@
 
 An **AI-powered Resume Screening System** that automatically analyzes candidate information, predicts whether a candidate should be **shortlisted**, and displays the result through a clean, modern web interface.
 
-This project was developed as part of the **SoftGrid Solutions AI/ML Internship** — a complete 5-day journey from raw data to a fully working web application. It demonstrates the end-to-end machine learning workflow:
+This project was developed as part of the **SoftGrid Solutions AI/ML Internship** — a complete 5-day journey from raw data to a fully deployed web application. It demonstrates the end-to-end machine learning workflow:
 
-🔍 Data Collection → 🧹 Preprocessing → 🤖 Model Training → 🌐 Web App → ✅ Testing & Documentation
+🔍 Data Collection → 🧹 Preprocessing → 🤖 Model Training → 🌐 Web App → 🚀 Live Deployment
 
 ---
 
@@ -30,10 +39,6 @@ This project was developed as part of the **SoftGrid Solutions AI/ML Internship*
 | **Duration** | 5-Day Project |
 
 ---
-
-## 🌐 Live Demo Preview
-
-The application allows users to enter candidate details and instantly receive a prediction with a confidence score and a clean candidate summary.
 
 > 💡 **Design Note:** Since the dataset consists of structured numerical features (experience, skills score, etc.) rather than raw resume text, the app uses a **feature-input form** instead of file upload. This is the correct design for this dataset, as the trained model expects numerical inputs.
 
@@ -68,6 +73,7 @@ AI-Resume-Screening-SoftGrid/
 │   ├── app.py                        # Main Flask backend
 │   ├── best_model_lr.pkl             # Trained model
 │   ├── label_encoder.pkl             # Label encoder
+│   ├── requirements.txt              # Dependencies
 │   ├── templates/
 │   │   ├── index.html                # Input form page
 │   │   └── result.html               # Prediction result page
@@ -114,7 +120,7 @@ Four classification models were trained and compared:
 | 📊 Naive Bayes | 87.00% | **0.9501** | 0.8580 | 0.9017 |
 
 ### 🏆 Best Model: Logistic Regression (90.02% Accuracy)
-This model was selected for deployment in the Flask web application.
+This model was selected for deployment in the live Flask web application.
 
 ### Feature Importance
 ```
@@ -142,6 +148,7 @@ education_level     ██                     3.2% — Least Important
 | Joblib | Model saving and loading |
 | Flask | Web application framework |
 | HTML5 & CSS3 | Frontend interface |
+| PythonAnywhere | Live deployment hosting |
 | Jupyter Notebook | Development environment |
 | Anaconda | Python distribution |
 
@@ -163,7 +170,7 @@ git clone https://github.com/fizaakhtar805-code/AI-Resume-Screening-SoftGrid.git
 cd AI-Resume-Screening-SoftGrid
 
 # 3. Install required libraries
-pip install pandas numpy matplotlib seaborn scikit-learn joblib flask
+pip install -r Day4/requirements.txt
 
 # 4. Navigate to the Day4 folder
 cd Day4
@@ -173,7 +180,10 @@ cd Day4
 
 ## 🚀 Usage Instructions
 
-### Running the Web Application
+### Option 1: Use the Live App (Easiest!)
+Simply visit **[fizaakhtar805.pythonanywhere.com](https://fizaakhtar805.pythonanywhere.com)** — no installation needed!
+
+### Option 2: Run Locally
 
 ```bash
 # Inside the Day4 folder, run:
@@ -217,7 +227,7 @@ The application includes:
 | Day 2 | Data Preprocessing & EDA | ✅ Complete |
 | Day 3 | Machine Learning Model Development | ✅ Complete |
 | Day 4 | Flask Web Application | ✅ Complete |
-| Day 5 | Integration, Testing & Documentation | ✅ Complete |
+| Day 5 | Integration, Testing & Live Deployment | ✅ Complete |
 
 ---
 
@@ -230,17 +240,18 @@ The application includes:
 - ✅ Modern, responsive UI design
 - ✅ ML model integrated with Flask backend
 - ✅ Tested with multiple candidate cases
+- ✅ **Deployed live on the internet** 🌐
 
 ---
 
 ## 🔮 Future Improvements
 
-- 🌐 Deploy the app to a cloud platform (Render / Heroku / PythonAnywhere)
 - 📄 Add real PDF/DOCX resume parsing using NLP
 - 🧠 Experiment with deep learning models (BERT, transformers)
 - 📊 Build an HR dashboard with analytics and history
 - 🔍 Extract features automatically from raw resume text
 - 💾 Add a database to store screening results
+- 🔐 Add user authentication for HR teams
 
 ---
 
@@ -251,5 +262,6 @@ This project was developed for educational purposes as part of the **SoftGrid So
 ---
 
 <p align="center">
-  Made with ❤️ by <b>Fiza Akhtar</b> | SoftGrid Solutions Internship 2026
+  Made with ❤️ by <b>Fiza Akhtar</b> | SoftGrid Solutions Internship 2026<br>
+  🌐 <a href="https://fizaakhtar805.pythonanywhere.com">Live App</a>
 </p>
