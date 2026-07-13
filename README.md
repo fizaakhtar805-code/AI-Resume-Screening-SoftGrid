@@ -1,5 +1,5 @@
 # 🤖 AI-Powered Resume Screening System
-### SoftGrid Solutions | AI/ML Internship Project
+
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikit-learn)
