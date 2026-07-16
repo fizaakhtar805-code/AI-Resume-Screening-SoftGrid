@@ -228,8 +228,7 @@ http://127.0.0.1:5000
 - 📊 Build an HR dashboard with analytics and history
 - 🔍 Extract features automatically from raw resume text
 - 💾 Add a database to store screening results
-- 🔐 Add user authentication for HR teams
-
+-
 ---
 
 ## 📜 License
